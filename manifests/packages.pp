@@ -3,6 +3,7 @@ class flatpak::packages() {
 
     $package_defaults = {
         ensure  => 'present',   # ensure => 'present' is the default for ensure_packages.
+        remote  => 'flatpak',
     }
 
     # Install packagages that are marked for installation in hiera
